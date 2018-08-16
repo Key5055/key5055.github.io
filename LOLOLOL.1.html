@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <style>
     td{
         border: 5px solid greenyellow;
@@ -19,6 +16,9 @@
     }
     table{
         margin: auto
+    }
+    #BUY_IT{
+
     }
     </style>
 </head>
@@ -35,5 +35,15 @@
                 <td><img src="./img/Merch lololol/Coke.png" alt=""></td>
         </tr>
     </table>
+    <div id="BUY_IT" title="Just do it!">
+        <p>BUY ALL OF IT</p>
+    </div>
 </body>
+<script>
+$(document).ready(function(){
+    $("#BUY_IT").dialog();
+})
+
+
+</script>
 </html>
